@@ -26,8 +26,6 @@ export default {
 
       console.log(this.$refs.dash1);
 
-      console.log("hdhj");
-
       const dockManager = new DockManager(element);
       console.log(`created - ${dockManager}`);
 
