@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-import DockManager from "../../lib/js/DockManager";
+import * as docker from '../../lib/js/DockManager';
 
 // ../../lib/js/DockManager
 export default {
@@ -26,7 +26,7 @@ export default {
 
       console.log(this.$refs.dash1);
 
-      const dockManager = new DockManager(element);
+      const dockManager = new docker.DockManager(element);
       console.log(`created - ${dockManager}`);
 
       dockManager.initialize();
